@@ -1,0 +1,21 @@
+/* Variables */
+:root{
+    --purple-color: #7674e2;
+    --white-color: #ffffff;
+    --blue-color: #2f374d;
+    --font-size: 14px;
+    --font-size-m: 22px;
+    --font--size-l: 30px;
+    --font--size-xl: 52px;
+    --font--size-xxl: 75px;
+    --mobile-font-size-m: 18px;
+    --mobile-font-size-l: 22px;
+    --mobile-font-size-xl: 32px;
+    --mobile-font-size-xxl: 44px;
+}
+
+/* navbar */
+
+.navbar__column__logo{
+    
+}

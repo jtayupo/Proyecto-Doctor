@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ONLINE DOCTOR</title>
+</head>
+<body>
+    <header class="container--center">
+        <div class="box">
+            <nav class="container navbar__container" >
+            <div class="container--center navbar__column--left">
+                <img src="assets/heart-logo.svg" class="navbar__column__logo" alt="heart">
+                <h3>Online Doctor</h3>
+            </div>
+            <div class="container--center navbar__column--right">
+                <div class="container navbar__modal navbar__modal--closed">
+
+                    <div class="container--center navbar__menu__icon__wraper">
+                        <img src="assets/close.svg" class="navbar__menu__icon--close hidden" onclick="closeModal()" alt="">
+                    </div>
+
+
+                    <div class="container--center ">
+                        <a href="" class="navbar__column_link">FOR PATIENTS</a>
+                    </div>
+                    <div class="container--center">
+                        <a href="" class="navbar__column_link">FOR PROVIDERS</a>
+                    </div>
+                    <div class="container--center">
+                        <a href="" class="navbar__column_link">FAQS</a>
+                    </div>
+                    <div class="container--center">
+                        <a href="" class="navbar__column_link">ABOUT</a>
+                    </div>
+                    <div class="container--center">
+                        <a href="" class="navbar__column_link">BLOG</a>
+                    </div>
+                    
+                </div>
+
+                
+                    <img src="assets/menu.svg" class="navbar__menu__icon" onclick="openModal()" alt="">
+                
+            </div>
+            </nav>
+            <div class="container--double-column">
+                <div class="column">
+                    <h1 class="text--xxl">Keep family in the loop and get support</h1>
+                    <p class="text text--m">Record and transcribe doctor visits to share securely with loved ones during complex care scenarios such as Cancer, Covid-19 and more</p>
+                    <p class="text--l text--bold">Download Now for free</p>
+                    <div class="container container__download">
+                        <img src="assets/download-logo-1.svg" alt="">
+                        <img src="assets/download-logo-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="assets/doctor.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container--center why-section">
+        <div class="box">
+            <h3 class="text--center text--xl">Why Online Doctor</h3>
+            <div class="container--double-column">
+                <div class="column">
+                    <h3 class="text--xl">Remenber crucial details</h3>
+                    <p class="text text--m">Online Doctor makes it simple to record and transcribe your doctor during a consultation,
+                     making easy for you to remenber their detailed instructions. Its a win-win for you and your doctor.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="assets/plataforma.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class="container--center why-section--inverted">
+        <div class="box">
+            <div class="container--double-column">
+                <div class="column">
+                    <img src="assets/plataforma2.png" alt="">
+                </div>
+                <div class="column">
+                    <h3 class="text--xl">Keep your inner circle in the loop</h3>
+                    <p class="text text--m">Everyone you choose to include stays connected  and informed at every step,
+                    automatically. Everything stays neatly organized in the Online Doctor app,
+                    including appoinment recordings, transcripts, post-appoinment group chats, 
+                    and even plans for the next appoinment.
+                    </p>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <footer class="container--center">
+        <div class="container__row">
+            <p class="text--l text--bold">Download Now for Free</p>
+
+        </div>
+        <div class="container__row container__download footer__container container--center">
+            <img src="assets/download-logo-1.svg" alt="">
+            <img src="assets/download-logo-2.svg" alt="">
+        </div>
+        
+    </footer>
+    <script>
+        function closeModal(){
+            let modal= document.querySelector(".navbar__modal");
+            let closeIcon = document.querySelector(".navbar__menu__icon--close");
+            let links = document.getElementsByClassName("navbar__column_link");
+            modal.classList.add("navbar__modal--closed")
+            closeIcon.classList.add("hidden");
+            for (link of links){
+                link.classList.remove("visible")
+            }
+
+        }
+
+        function openModal(){
+            let modal= document.querySelector(".navbar__modal");
+            let closeIcon = document.querySelector(".navbar__menu__icon--close");
+            let links = document.getElementsByClassName("navbar__column_link");
+            modal.classList.remove("navbar__modal--closed")
+            closeIcon.classList.remove("hidden");
+            for (link of links){
+                link.classList.add("visible")
+            }
+
+        }
+    </script>
+</body>
+</html>
